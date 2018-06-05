@@ -1,6 +1,33 @@
+
+<div class="row">
+  <div class="col">
+    <div ngbDropdown class="d-inline-block">
+      <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle >Login</button>
+      <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+        <button class="dropdown-item">Iniciar Sesion</button>
+        <button class="dropdown-item">Cerrar Sesion</button>
+
+      </div>
+    </div>
+  </div>
+
+  <p-table [value]="gas">
+    <ng-template pTemplate="header">
+      <tr>
+        <th>Tipo de emanacion</th>
+        <th>Rangos</th>
+        <th>Fecha y Hora</th>
+        <th>Sensor</th>
+        <th>Habitacion</th>
+      </tr>
+    </ng-template>
+
+  </p-table>
+
 <div>
 <app-menu></app-menu> 
 </div>
 <div>
 <app-tabla></app-tabla>
 </div>
+
