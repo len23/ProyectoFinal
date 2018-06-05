@@ -1,0 +1,19 @@
+<h3 class="first">Basic</h3>
+<p-table [value]="consultas">
+    <ng-template pTemplate="header">
+        <tr>
+            <th>tipoEmanacion</th>
+            <th>rango</th>
+            <th>fecha</th>
+            <th>habitacion</th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-consultas>
+        <tr>
+            <td>{{consultas.tipoEmanacion}}</td>
+            <td>{{consultas.rango}}</td>
+            <td>{{consultas.fecha}}</td>
+            <td>{{consultas.habitacion}}</td>
+        </tr>
+    </ng-template>
+</p-table>
